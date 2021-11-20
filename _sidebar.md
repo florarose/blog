@@ -1,4 +1,4 @@
 - [介绍](/README.md)
 - [如何使用docsify](/blog/docsify.md)
 - [思考](/blog/study1.md)
-- [摸鱼](/blog/study1.md)
+- [摸鱼](/blog/BucaIngCyberloafing.md)

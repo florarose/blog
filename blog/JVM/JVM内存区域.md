@@ -92,6 +92,37 @@ StringBuffer sb是一个方法内部变量，上述代码中直接将sb返回，
         return result;
     }
 ```
+
+逃逸分析包括：
+
++ 全局变量赋值逃逸
++ 方法返回值逃逸
++ 实例引用发生逃逸
++ 线程逃逸：赋值给类变量或可以在其他线程中访问的实例变量
+
+```
+public class EscapeAnalysis {
+ 
+     public static Object object;
+     
+     public void globalVariableEscape(){   //全局变量赋值逃逸  
+         object =new Object();  
+      }  
+     
+     public Object methodEscape(){    //方法返回值逃逸
+         return new Object();
+     }
+     
+     public void instancePassEscape(){   //实例引用发生逃逸
+        this.speak(this);
+     }
+     
+     public void speak(EscapeAnalysis escapeAnalysis){
+         System.out.println("Escape Hello");
+     }
+}
+```
+
 ## 同步消除(锁消除)
 如果一个对象被发现只能从一个线程被访问到，那么对于这个对象的操作可以不考虑同步。
 
@@ -131,7 +162,8 @@ append方法时一个同步方法，它的方法签名是：
 1. 虚拟机提供的一种优化技术，基本思想是，对于线程私有的对象，将它打散分配在栈上，而不分配在堆上。好处是对象跟着方法调用自行销毁，不需要进行垃圾回收，可以提高性能。
 2. 栈上分配需要的技术基础，逃逸分析。逃逸分析的目的是判断对象的作用域是否会逃逸出方法体。注意，任何可以在多个线程之间共享的对象，一定都属于逃逸对象。
 3. 如果逃逸分析能够证明某些新建的 **对象不逃逸** ，那么 Java 虚拟机完全可以将其分配至栈上，并且在 new 语句所在的方法退出时，通过弹出当前方法的栈桢来自动回收所分配的内存空间。
-# 标量替换
+
+## 标量替换
 定义：通过逃逸分析确定该对象不会被外部访问，并且对象可以被进一步分解时，JVM不会创建该对象，而会将该对象成员变量分解若干个被这个方法使用的成员变量所代替。这些代替的成员变量在栈帧或寄存器上分配空间。
 
 ```

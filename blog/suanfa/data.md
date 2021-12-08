@@ -4,8 +4,7 @@
 
 > 数组是一组连续内存空间存储的具有相同类型的数据，整个排列像一条线一样，是一种线性表数据结构。
 >
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc9a6e2d-6a0a-4284-8590-b8aaa39dbc22/Untitled.png)
+![数组](../../_media/shuzu.png)
 
 **划重点：**
 
@@ -35,8 +34,7 @@
 
 > 链表一种非连续、非顺序的存储结构，由一系列节点组成，节点间通过指针完成了串联，每个节点包含数据和下一个节点指针两部分。
 >
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/73cb4699-852f-4e3a-ad74-88035d29595b/Untitled.png)
+![链表](../../_media/链表.png)
 
 根据指针的方向可以分为：
 
@@ -70,8 +68,7 @@
 
 > 又名堆栈，它是一种运算受限的线性表。上面成为栈顶，下面称为栈底。向栈插入新元素称为入栈，新元素放到栈顶；从一个栈删除元素又称作出栈，它是把栈顶元素删除掉，使其下面相邻的元素成为新的栈顶元素。
 >
-
-[https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPxkJga1LXCmIaaViaPABkY3EI6PjxhucvAmELL2zcIicJR50UpYRvzpUg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1](https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPxkJga1LXCmIaaViaPABkY3EI6PjxhucvAmELL2zcIicJR50UpYRvzpUg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![栈](../../_media/栈.png)
 
 根据底层结构不同，可以分为`数组实现的顺序栈`、`链表实现的链式栈`。
 
@@ -99,8 +96,7 @@
 
 > 队列是一种特殊的线性表，只允许在表的前端进行删除操作，而在表的后端进行插入操作。和栈一样，队列是一种操作受限制的线性表。插入的数据放在队尾，读取数据的端称为队头。队列中没有元素时，称为空队列。
 >
-
-[https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPtGMiatCp9smgrFCDdtGRpCLIGdvibKdxgUibfY3CVeM7uviaLRG6VT485Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1](https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPtGMiatCp9smgrFCDdtGRpCLIGdvibKdxgUibfY3CVeM7uviaLRG6VT485Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![队列](../../_media/队列.png)
 
 根据支持的高级特性，可以分为：循环队列、阻塞队列、并发队列。根据底层结构不同，可以分为`顺序队列`、`链式队列`。
 
@@ -129,8 +125,7 @@
 
 > 哈希表（Hash table）也叫散列表。根据键（Key）而直接访问在内存储存位置的数据结构。它通过计算一个关于键值的函数，将所需查询的数据映射到表中一个位置来访问记录，加快查找速度。这个映射函数称为散列函数，存放记录的数组称做散列表。
 >
-
-[https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPWoZGxNSLngxmqricf4xWEITLdmEJvic6Ribnwb0hvIjfLPhcRQOTNrzsg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1](https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPWoZGxNSLngxmqricf4xWEITLdmEJvic6Ribnwb0hvIjfLPhcRQOTNrzsg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![哈希表](../../_media/haxibiao.png)
 
 **划重点：**
 
@@ -161,8 +156,7 @@
 
 > 图(Graph)是由顶点的有穷非空集合和顶点之间的集合组成，通常表示为：G（V, E），其中 G 表示一个图，V 是图 G 中顶点的集合，E 是图 G 中边的集合。
 >
-
-[https://mmbiz.qpic.cn/mmbiz_png/2KTof9YshwculhFbcB0uKh7yTC8dKCHPjSUz51H0icqVGuYBUdYwCVGafXabN9QBic4zGLJB7P8iciajzqCwn5v4sA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1](https://mmbiz.qpic.cn/mmbiz_png/2KTof9YshwculhFbcB0uKh7yTC8dKCHPjSUz51H0icqVGuYBUdYwCVGafXabN9QBic4zGLJB7P8iciajzqCwn5v4sA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![图](../../_media/图.png)
 
 上图是一个有向图G，G=（V，E），其中顶点集合 V = 1、2、3、4，边集合是 E = (1,3)、(2,1)、(2,4)、(3,2)、(3,4)、(4,2)
 
@@ -203,8 +197,7 @@
 
 > 顾名思义，跟现实的树一样，树上的每一个元素成为节点，节点与节点之间有一定的关系，上下称为父子节点，左右称为兄弟节点。
 >
-
-[https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPxssDAN39Vu8730QUoLzdoKpoUnbOYCWzzdOJ3eZrWiau505iaLZdR3Ag/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1](https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPxssDAN39Vu8730QUoLzdoKpoUnbOYCWzzdOJ3eZrWiau505iaLZdR3Ag/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![树](../../_media/树.png)
 
 按照树的表现结构，可以具体分为以下几种类型：二叉树、平衡二叉树、满二叉树、完全二叉树、递归树、红黑树、B- 树、B+ 树 ，等
 
@@ -237,8 +230,7 @@
 
 > 一种特殊的二叉树。需要满足两个条件：1、是一棵完全二叉树 2、堆中每个节点的值必须>=或<=其左右子节点的值。
 >
-
-[https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPN5GzTsXluH1zSXROIdpXO5zibAibkbDgPzH8oXJibhopKVicMArm9agdhw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1](https://mmbiz.qpic.cn/mmbiz_jpg/2KTof9YshwculhFbcB0uKh7yTC8dKCHPN5GzTsXluH1zSXROIdpXO5zibAibkbDgPzH8oXJibhopKVicMArm9agdhw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![堆](../../_media/堆.png)
 
 具体，根据每个节点的值是>= 还是 <= 子树中每个节点的值，分为大顶堆、小顶堆。
 

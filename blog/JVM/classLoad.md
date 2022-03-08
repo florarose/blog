@@ -1,5 +1,8 @@
+[toc]
+
 # 类的生命周期
 ![111](../../_media/jvmClassLoad1.png)
+
 
 # 过程
 ## 加载（load）
